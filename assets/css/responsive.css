@@ -1,0 +1,213 @@
+/* 
+----------------------------------- 
+MEDIA QUERIES
+----------------------------------- 
+*/
+
+@media (min-width: 1441px) {
+  .container {
+    max-width: 1390px;
+  }
+}
+
+@media (max-width: 1390px) {
+  /* GLOBAL */
+  .hidden-lg {
+    display: flex !important;
+  }
+  main,
+  header {
+    padding: 0 20px;
+  }
+  /* SECTION 1 */
+  /* Navigation */
+  .list-1 > div {
+    width: calc(25% - (60px / 4));
+    margin-right: 0;
+  }
+  .list-1 {
+    flex-wrap: wrap;
+  }
+  .list-1 > div:not(:last-child) {
+    margin-right: 0px;
+  }
+  .list-1 > div:not(:nth-child(4n)) {
+    margin-right: 20px;
+  }
+  .list-1 > div:nth-child(1),
+  .list-1 > div:nth-child(2),
+  .list-1 > div:nth-child(3),
+  .list-1 > div:nth-child(4) {
+    margin-bottom: 20px;
+  }
+  /* Pictures */
+  .pictures > .col-2 {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1264px) {
+  /* SECTION 1 */
+  /* Description */
+  .description .col-2 div:first-child {
+    height: 294px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* GLOBAL */
+  h1 {
+    font-size: 54px;
+  }
+  /* HEADER */
+  header nav span {
+    display: none;
+  }
+  /* SECTION 1 */
+  /* Pictures */
+  .pictures {
+    height: 276px;
+    display: flex;
+  }
+  .pictures > .col-2 {
+    width: 324px;
+  }
+  /* Description */
+  .description {
+    display: flex;
+    flex-direction: column;
+  }
+  .description .col-1,
+  .description .col-2 {
+    width: 100%;
+  }
+  .description .col-1 {
+    margin-bottom: 60px;
+  }
+  .description .col-2 {
+    max-width: 100%;
+    margin-left: 0px;
+    display: flex;
+  }
+  .description .col-2 div:first-child,
+  .description .col-2 div:last-child {
+    height: 274px;
+    width: 50%;
+  }
+  .description .col-2 div:first-child {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .description .col-2 div:last-child {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+
+  /* SECTION 2 */
+  .list-2 {
+    flex-wrap: wrap;
+  }
+  .list-2 > div {
+    width: calc(50% - 10px);
+  }
+  .list-2 > div:not(:last-child) {
+    margin-right: 0px;
+  }
+  .list-2 > div:nth-child(odd) {
+    margin-right: 20px;
+  }
+  .list-2 > div:nth-child(1),
+  .list-2 > div:nth-child(2) {
+    margin-bottom: 20px;
+  }
+
+  /* SECTION 3 */
+  .section-3 .carrousel-col {
+    width: calc(100% / 2 - 10px);
+  }
+}
+
+@media (max-width: 850px) {
+  /* Description */
+  .description .col-2 div:first-child,
+  .description .col-2 div:last-child {
+    height: 294px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* GLOBAL */
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  /* HEADER */
+  header nav {
+    display: none;
+  }
+  .hidden-med {
+    display: flex;
+  }
+  /* SECTION 1 */
+  /* Navigation */
+  .list-1 > div {
+    width: calc(50% - 10px);
+  }
+  .list-1 > div:not(:nth-child(4n)) {
+    margin-right: 0;
+  }
+  .list-1 > div:not(:nth-child(even)) {
+    margin-right: 20px;
+  }
+  .list-1 > div:nth-child(5),
+  .list-1 > div:nth-child(6) {
+    margin-bottom: 20px;
+  }
+  /* Pictures */
+  .pictures > .col-2 {
+    display: none;
+  }
+  .pictures > .col-1 img {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .description .col-2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .description .col-2 > div:first-child,
+  .description .col-2 > div:last-child {
+    width: 100%;
+    height: 234px;
+  }
+  .description .col-2 div:first-child {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+  }
+  .description .col-2 div:last-child {
+    border-bottom-left-radius: 16px;
+    border-top-right-radius: 0px;
+  }
+  /* SECTION 3 */
+  .section-3 > div:last-child {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-3 .carrousel-col {
+    width: calc(100%);
+  }
+  .section-3 .carrousel-col img {
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .section-3 .col-1 {
+    padding-right: 0px;
+    margin-bottom: 40px;
+  }
+}
